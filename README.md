@@ -99,4 +99,14 @@ Model layout:
 ### Training and fine-tuning
 Due to the computational requirements and tendency to overfit the training callbacks were implemented to look at the validation accuracy and stop the model training if the validation accuracy didn't improve after 2 epochs:
 
+```
+callbacks = [
+    tf.keras.callbacks.EarlyStopping(
+        monitor='val_accuracy',
+        patience=2,
+        restore_best_weights=True)]
+```
+
+
+
 ### Evaluation and Metrics
