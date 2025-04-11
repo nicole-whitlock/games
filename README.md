@@ -22,7 +22,8 @@ Dataset overview:
 ### Benchmarking
 
 ### Preliminary Experiments
-Preliminary experiments were done on a subset of the data to get an idea of the time and resources required. The distilbert for sequence classification was used 
+Preliminary experiments were done on a subset of the data to get an idea of the time and resources required. The distilbert for sequence classification was used to gain an understanding of performance and resource requirements (which turned out to be quite extensive) 
+
 # Model Implementation
 ### Framework Selection
 ### Dataset Preparation
