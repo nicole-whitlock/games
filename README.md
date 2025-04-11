@@ -6,6 +6,22 @@ Our primary objective is to design and implement a robust pipeline that processe
 
 The central challenge lies in interpreting the varied and often nuanced language found in game reviews. Reviews may include slang, domain-specific jargon, and subtle emotional cues that complicate sentiment classification. Overcoming these hurdles involves rigorous data cleaning, text normalization, and feature extraction. Our solution will harness both traditional machine learning and modern deep learning techniques to achieve high accuracy in sentiment analysis.
 
+Our primary objective is to design and implement a robust pipeline that processes raw textual data, extracts meaningful features, and employs state-of-the-art classification algorithms to gauge sentiment accurately. This approach aims to provide actionable insights that can influence game development, marketing strategies, and overall industry decision-making.
+
+The central challenge lies in interpreting the varied and often nuanced language found in game reviews. Reviews may include slang, domain-specific jargon, and subtle emotional cues that complicate sentiment classification. Overcoming these hurdles involves rigorous data cleaning, text normalization, and feature extraction. Our solution will harness both traditional machine learning and modern deep learning techniques to achieve high accuracy in sentiment analysis.
+
+
+
+Dataset overview:
+
+|   id |      title |                                quote |                                             score |  date |   platform |      author | publicationName | review_type |      |
+| ---: | ---------: | -----------------------------------: | ------------------------------------------------: | ----: | ---------: | ----------: | --------------: | ----------: | ---- |
+|    2 | 1300001290 | The Legend of Zelda: Ocarina of Time | an open world on the classic console, perhaps ... | 100.0 | 2023-02-03 | Nintendo 64 |      aaronnmp96 |         NaN | user |
+|    3 | 1300001290 | The Legend of Zelda: Ocarina of Time | This masterpiece holds a special place in the ... | 100.0 | 2022-10-24 | Nintendo 64 | AmadouIraklidis |         NaN | user |
+|    4 | 1300001290 | The Legend of Zelda: Ocarina of Time | 10 out of 10 easily one of the best games of h... | 100.0 | 2023-01-31 | Nintendo 64 |          slushy |         NaN | user |
+|    5 | 1300001290 | The Legend of Zelda: Ocarina of Time | Absolutely the best game ever made. Completely... | 100.0 | 2022-06-12 | Nintendo 64 |      Konnor1224 |         NaN | user |
+|    6 | 1300001290 | The Legend of Zelda: Ocarina of Time | the people rating this game a 0 will absolutel... | 100.0 | 2022-11-21 | Nintendo 64 |   Pokemandeluxe |             |      |
+
 
 ### Literature Review
 ### Benchmarking
@@ -13,6 +29,7 @@ Preliminary
 
 Model for distilbert with 50000 samples and no additional layers
 ### Preliminary Experiments
+Preliminary experiments were done on a subset of the data to get an idea of the time and resources required. The distilbert for sequence classification was used 
 # Model Implementation
 ### Framework Selection
 ### Dataset Preparation
