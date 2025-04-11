@@ -15,7 +15,8 @@ Model for distilbert with 50000 samples and no additional layers
 # Model Implementation
 ### Framework Selection
 ### Dataset Preparation
-Transfomers are well known for being able to capture the context and dependencies in words, and perform well with minimal data cleaning. It is generally not required to do extensive data cleaning on transformers so minimal cleaning was done:
+#### Distilbert Transformer
+Transfomers are capable of being able to capture the context and dependencies in words, and perform well with minimal data cleaning. It is generally not required to do extensive data cleaning on transformers so minimal cleaning was done:
 
 - Removed leading, trailing, and extra whitespaces
 
