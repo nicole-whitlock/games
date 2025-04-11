@@ -85,5 +85,16 @@ val_dataset = val_dataset.batch(16)
 
 
 ### Model Development
+
+The model was created using a distilbert model with additional layers added on to try and avoid overfitting and improve performance of the model. The additional layers that were added need the data to be in a dataset format with input_ids and attention_masks that can be passed into the distilbert layer and then the hidden states can be output to the next layer.
+
+Model layout:
+
+- input layer with `attention_masks` and `input_ids`
+- bert layer:  ouputs the `hidden_state` from the pretrained bert model to pass to the next layer
+
+- dropout layer: regulariztion to avoid overfitting
+- global average pooling layer: to reduce the dimensions of the data to produce an output that can be passed to the dense layer
+- dense layer: final dense output layer that takes the input from the pooling layer and uses softmax to then predict probabilities
 ### Training and fine-tuning
 ### Evaluation and Metrics
