@@ -97,4 +97,6 @@ Model layout:
 - global average pooling layer: to reduce the dimensions of the data to produce an output that can be passed to the dense layer
 - dense layer: final dense output layer that takes the input from the pooling layer and uses softmax to then predict probabilities
 ### Training and fine-tuning
+Due to the computational requirements and tendency to overfit the training callbacks were implemented to look at the validation accuracy and stop the model training if the validation accuracy didn't improve after 2 epochs:
+
 ### Evaluation and Metrics
