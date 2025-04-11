@@ -20,7 +20,7 @@ Transfomers are capable of being able to capture the context and dependencies in
 
 - Removed leading, trailing, and extra whitespaces
 
-Tokenization:
+#### Tokenization:
 
 - `Distilbert-base-uncased` tokenizer was loaded and implemented to tokenize the text data for model training
 - Function `tokenize_optimized` to tokenize data in batches to avoid memory crashing on the computer.
@@ -31,11 +31,11 @@ Tokenization:
   - `special_tokens`= True, to add tokens [CLS, SEP] to distinguish each sequence for classification
 - Function outputs the input_ids and attention_masks for each row of the quote column in the dataframe
 
-Data Splitting
+#### Data Splitting
 
 - Data was split using `train-test-split` to first split data into training and test data and then the training data was further split to get validation data.
 
-Sentiment Encoding:
+#### Sentiment Encoding:
 
 - Sentiment was split into 'positive', 'negative', and 'neutral'. These values were then encoded into numerical values for training the model:
 
@@ -49,7 +49,7 @@ Sentiment Encoding:
 
 
 
-Dataset creation:
+#### Dataset creation:
 
 The model was created using a distilbert model with additional layers added on to try and avoid overfitting and improve performance of the model. The additional layers that were added need the data to be in a dataset format with input_ids and attention_masks that can be passed into the distilbert layer and then output to the next layer:
 
