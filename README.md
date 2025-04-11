@@ -27,6 +27,8 @@ Preliminary experiments were done on a subset of the data to get an idea of the 
 # Model Implementation
 ### Framework Selection
 ### Dataset Preparation
+The dataset chosen includes video game reviews from a myriad of languages. The focus of this project was to just look at the ‘English’ language reviews. The dataset first had to be filtered using a python library `langdetect` in order to label the language of each review. Additionally, each score was on a scale from 1-100, in order to perform sentiment analysis these scores were bucketed into values for 'negative', 'neutral', and 'positive' to represent sentiment categories.
+
 #### Distilbert Transformer
 Transfomers are capable of being able to capture the context and dependencies in words, and perform well with minimal data cleaning. It is generally not required to do extensive data cleaning on transformers so minimal cleaning was done:
 
